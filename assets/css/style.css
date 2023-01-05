@@ -953,8 +953,41 @@ p {
 /*===========================
        04.SERVICE css 
 ===========================*/
+.service-title{
+  margin-top: 20px;
+  display: flex;
+}
+.service-title > h4 {
+  margin-left: 5px;
+}
+
+.service-title > i {
+  font-size: 20px;
+  background-color: #00A78E;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  padding: 5px;
+  border-radius: 10px 10px 0 10px;
+}
 .services_area {
-  background-color: #F9F9F9; }
+  background-color: #f9f9f9; }
+
+.service_content:hover > img {
+  transition: 0.2s;
+  opacity: 0.7;
+}
+.service_content:hover  > .service-title i{
+  color: #00A78E;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.service_content:hover  > .service-title h4{
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
 
 .single_service {
   padding: 30px;
@@ -1014,14 +1047,20 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
   .single_service:hover {
-    background-color: #00A78E; }
+    background-color: #00A78E; 
+  }
     .single_service:hover .service_icon i {
       background-color: #fff;
       color: #00A78E; }
     .single_service:hover .service_content .service_title a {
       color: #fff; }
     .single_service:hover .service_content p {
-      color: #fff; }
+      color: #fff; 
+      }
+    .service_title{
+      margin-top: 10px;
+
+    }
 
 /*===========================
    10.CALL TO ACTION css 
