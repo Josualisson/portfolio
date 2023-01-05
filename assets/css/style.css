@@ -499,11 +499,11 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
   .sticky .navbar {
-    padding: 10px 0; }
-   .sticky .navbar-brand img{
-    transition: all 0.9s;
-      border: #00A78E 1px solid;
-    }
+    padding: 10px 0; 
+  }
+  .sticky .navbar-brand img{
+    filter: invert(100%);
+  }
 
 .navbar {
   padding: 25px 0;
